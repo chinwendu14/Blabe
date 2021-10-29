@@ -1,0 +1,366 @@
+// @use "../../styles/" as *;
+@use "../../../styles/" as *;
+.hero {
+  background-color: color(pink);
+  //   background-color: pink;
+  padding: 30px 0;
+  P {
+    font-size: 18px;
+  }
+}
+.hero-business {
+  padding-top: 100px;
+  h2 {
+    font-weight: bold;
+  }
+}
+.formBtn {
+  width: 90%;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 16px 0;
+
+  //   form {
+  //     width: 100px;
+  //   }
+  .form-control {
+    border: none;
+  }
+  input {
+    font-size: 18px;
+    box-shadow: none;
+  }
+  .btn-outline-success {
+    background-color: color(redbase);
+    color: white;
+    font-size: 18px;
+    &:hover {
+      background-color: color(redbase) !important;
+      border: 1px solid #ff6634;
+    }
+  }
+}
+.hero_linkDiv {
+  p > .Link {
+    color: color(redbase);
+    margin-left: 5px;
+  }
+}
+.hero__quote {
+  padding-top: 20px;
+  // width: 100px;
+  .hero__quoteright {
+    padding-right: 10px;
+    img {
+      margin-right: 2px;
+    }
+  }
+
+  .hero__quoteleft {
+    padding-left: 10px;
+    width: 20%;
+    img {
+      margin-right: 2px;
+    }
+  }
+}
+
+.hero__heroImg {
+  position: relative;
+  height: 85vh;
+  .hero__heroImgspanNum {
+    top: 120px;
+    left: 170px;
+    position: absolute;
+  }
+  .hero__heroImgspanMan > img {
+    width: 116%;
+    top: 0;
+    position: absolute;
+  }
+  .hero__heroImgspanManCard {
+    position: absolute;
+    top: 55%;
+    background-color: white;
+    width: 60%;
+    padding: 15px;
+    border-radius: 5px;
+
+    .hero__heroImgspanManCardCont {
+      position: relative;
+      min-height: 160px;
+    }
+    // box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    .hero__heroImgspanManCard1 {
+      position: absolute;
+      opacity: 0;
+      transition: 2s ease-in;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+  .hero__heroImgspan > img {
+    position: absolute;
+    top: 130px;
+    left: 85%;
+  }
+}
+
+@include MinMax(330px, 766px) {
+  .hero {
+    background-color: color(pink);
+    //   background-color: pink;
+    padding: 10px 0;
+    p {
+      font-size: 18px;
+    }
+  }
+  .hero-business {
+    padding-top: 10px;
+    h2 {
+      font-weight: bold;
+    }
+  }
+  .hero__heroImg {
+    position: relative;
+    height: 60vh;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    .hero__heroImgspanNum {
+      top: 60px;
+      left: 70px;
+      position: absolute;
+    }
+    .hero__heroImgspanMan > img {
+      width: 100%;
+      top: 0;
+      position: absolute;
+    }
+    .hero__heroImgspanManCard {
+      position: absolute;
+      top: 55%;
+      background-color: white;
+      width: 80%;
+      padding: 15px;
+      border-radius: 5px;
+      height: 200px;
+    }
+    .hero__heroImgspan > img {
+      position: absolute;
+      top: 40px;
+      left: 75%;
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .formBtn {
+    width: 90%;
+
+    input {
+      font-size: 18px;
+      height: 50px;
+      box-shadow: none;
+    }
+
+    .form-control {
+      border: none;
+    }
+    .btn-outline-success {
+      font-size: 18px;
+    }
+  }
+}
+@include MinMax(768px, 900px) {
+  .hero {
+    padding: 30px 0;
+    P {
+      font-size: 18px;
+    }
+  }
+  .hero-business {
+    padding-top: 10px;
+    h2 {
+      font-weight: bold;
+    }
+  }
+  .hero__heroImg {
+    position: relative;
+    height: 50vh;
+
+    .hero__heroImgspanNum {
+      top: 60px;
+      left: 70px;
+      position: absolute;
+    }
+    .hero__heroImgspanMan > img {
+      width: 100%;
+      top: 0;
+      position: absolute;
+    }
+    .hero__heroImgspanManCard {
+      position: absolute;
+      top: 35%;
+      background-color: white;
+      width: 80%;
+      padding: 15px;
+      border-radius: 5px;
+      height: 200px;
+    }
+    .hero__heroImgspan > img {
+      position: absolute;
+      top: 40px;
+      left: 75%;
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+//
+
+@include MinMax(0px, 320px) {
+  .hero__heroImg {
+    position: relative;
+    height: 60vh;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    .hero__heroImgspanNum {
+      top: 60px;
+      left: 70px;
+      position: absolute;
+    }
+    .hero__heroImgspanMan > img {
+      width: 100%;
+      top: 0;
+      position: absolute;
+    }
+    .hero__heroImgspanManCard {
+      position: absolute;
+      top: 55%;
+      background-color: white;
+      width: 80%;
+      padding: 15px;
+      border-radius: 5px;
+      height: 200px;
+    }
+    .hero__heroImgspan > img {
+      position: absolute;
+      top: 40px;
+      left: 75%;
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .hero {
+    padding: 30px 0;
+    P {
+      font-size: 18px;
+    }
+  }
+  .hero-business {
+    padding-top: 10px;
+    h2 {
+      font-weight: bold;
+    }
+  }
+  .hero__heroImg {
+    position: relative;
+    height: 70vh;
+
+    .hero__heroImgspanNum {
+      top: 60px;
+      left: 70px;
+      position: absolute;
+    }
+    .hero__heroImgspanMan > img {
+      width: 100%;
+      top: 0;
+      position: absolute;
+    }
+    .hero__heroImgspanManCard {
+      position: absolute;
+      top: 45%;
+      background-color: white;
+      width: 80%;
+      padding: 15px;
+      border-radius: 5px;
+      height: 200px;
+    }
+    .hero__heroImgspan > img {
+      position: absolute;
+      top: 40px;
+      left: 75%;
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+@include MinMax(1000px, 1024px) {
+  .hero {
+    background-color: color(pink);
+    //   background-color: pink;
+    padding: 10px 0;
+    p {
+      font-size: 18px;
+    }
+  }
+  .hero-business {
+    padding-top: 10px;
+    h2 {
+      font-weight: bold;
+    }
+  }
+  .hero__heroImg {
+    position: relative;
+    height: 35vh;
+    // margin-left: 10px;
+    margin-bottom: 20px;
+    .hero__heroImgspanNum {
+      top: 70px;
+      left: 90px;
+      position: absolute;
+    }
+    .hero__heroImgspanMan > img {
+      width: 100%;
+      top: 0;
+      position: absolute;
+    }
+    .hero__heroImgspanManCard {
+      position: absolute;
+      top: 50%;
+      background-color: white;
+      width: 80%;
+      padding: 15px;
+      border-radius: 5px;
+      height: 200px;
+    }
+    .hero__heroImgspan > img {
+      position: absolute;
+      top: 40px;
+      left: 75%;
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  // btn
+  .formBtn {
+    width: 90%;
+
+    input {
+      font-size: 18px;
+      height: 50px;
+      box-shadow: none;
+    }
+
+    .form-control {
+      border: none;
+    }
+    .btn-outline-success {
+      font-size: 18px;
+    }
+  }
+}

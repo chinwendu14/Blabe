@@ -1,0 +1,23 @@
+@use "../../../styles/" as *;
+.advert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  margin: 50px 0;
+  p {
+    font-size: 18px;
+  }
+}
+
+@include MinMax(330px, 700px) {
+  .advert {
+    flex-direction: column;
+  }
+}
+
+@include MinMax(0px, 320px) {
+  .advert {
+    flex-direction: column;
+  }
+}

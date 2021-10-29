@@ -1,0 +1,82 @@
+@use "../../styles/" as *;
+.ratingCard {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+  //   width: calc(100 / 2);
+  width: 30%;
+  border-radius: 5px;
+  p {
+    font-size: 18px;
+  }
+  .ratingCard__boxshadow {
+    padding: 15px 30px;
+  }
+}
+
+.ratingCard__divStar {
+  span {
+    color: color(redbase);
+    padding-right: 3px;
+  }
+  .ratingCard__white {
+    color: color(ash);
+  }
+  .ratingCard__whiteNum {
+    color: black;
+  }
+}
+
+.ratingCard__divIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .ratingCard__paraC {
+    color: color(redbase);
+    padding: 5px 10px;
+    background: #ff66340d;
+    border-radius: 5px;
+  }
+  .ratingCard__paraCText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    img {
+      //   size: 30px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.ratingCard__divAnalysis {
+  display: flex;
+  align-items: center;
+  //   justify-content: center;
+  background-color: color(ash);
+  padding: 15px 30px;
+  img {
+    margin-right: 10px;
+  }
+  .ratingCard__divAnalysisPara {
+    padding-top: 20px;
+  }
+}
+
+@include MinMax(330px, 768px) {
+  .ratingCard {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    //   width: calc(100 / 2);
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+}
+
+@include MinMax(0px, 320px) {
+  .ratingCard {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    //   width: calc(100 / 2);
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+}

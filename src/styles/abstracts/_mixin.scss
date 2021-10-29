@@ -1,0 +1,21 @@
+@mixin MinMax($arg, $ar) {
+  @media screen and(min-width:$arg) and (max-width: $ar) {
+    @content;
+  }
+}
+@mixin MinMaxH($arg, $ar) {
+  @media screen and(min-width:$arg) and (max-width: $ar) {
+    @content;
+  }
+}
+
+@mixin Min($arg) {
+  @media screen and(min-width:$arg) {
+    @content;
+  }
+}
+@mixin Max($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}

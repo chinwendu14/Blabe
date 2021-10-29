@@ -1,0 +1,56 @@
+@use "../../styles/" as *;
+// .footer {
+
+// }
+
+.footer {
+  background-color: color(blackColor);
+}
+.padding-footer {
+  padding: 0 20px !important;
+}
+.align {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(255, 255, 255, 0.514);
+  font-size: 15px;
+}
+.socialIcons-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+  padding-top: 30px;
+  p > span {
+    box-shadow: 0 0 12px rgba(185, 174, 174, 0.5);
+    color: white;
+    border: 1 solid red;
+    padding: 12px;
+    font-size: 12px;
+    // height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+.copy {
+  color: rgba(255, 255, 255, 0.514);
+  padding-top: 20px;
+}
+
+.About-footer {
+  // padding: 0 0 !important;
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.514);
+
+    .Link {
+      color: rgba(255, 255, 255, 0.514) !important;
+    }
+  }
+}

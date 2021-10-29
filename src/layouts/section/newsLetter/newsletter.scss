@@ -1,0 +1,85 @@
+@use "../../../styles" as *;
+.newsletter {
+  background-color: color(ash);
+  padding: 40px 40px;
+  p {
+    font-size: 18px;
+  }
+}
+
+.formBtnews {
+  width: 90%;
+  //   background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 16px 0;
+  input {
+    font-size: 18px;
+  }
+  .btn-outline-success {
+    background-color: color(redbase);
+    color: white;
+    margin-left: 10px;
+    font-size: 18px;
+
+    &:hover {
+      background-color: color(redbase) !important;
+      border: 1px solid #ff6634;
+    }
+  }
+}
+.space {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@include MinMax(330px, 766px) {
+  .hun {
+    width: 100%;
+  }
+  .para {
+    width: 100%;
+  }
+  .para > p {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .formBtnews {
+    width: 100%;
+
+    input {
+      font-size: 18px;
+      height: 50px;
+    }
+    .btn-outline-success {
+      font-size: 18px;
+    }
+  }
+  .space {
+    display: none;
+  }
+}
+@include MinMax(768px, 900px) {
+  .space {
+    display: block;
+  }
+}
+@include MinMax(0px, 320px) {
+  .formBtnews {
+    width: 100%;
+
+    input {
+      width: 100%;
+    }
+    .btn-outline-success {
+      font-size: 18px;
+    }
+  }
+  .para {
+    width: 100% !important;
+  }
+  .space {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+@use "../../styles/" as *;
+
+.advertComponent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: color(ash);
+  height: 200px;
+  padding: 30px;
+  width: 250%;
+  margin: 0 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  //   border: 1px solid black;
+}
+
+@include MinMax(330px, 700px) {
+  .advertComponent {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@include MinMax(0px, 320px) {
+  .advertComponent {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

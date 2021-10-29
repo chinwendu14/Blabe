@@ -1,0 +1,20 @@
+@use "../../../styles/" as *;
+.logos-flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 30px 0;
+
+  //   background-color: black;
+}
+
+@include MinMax(330px, 768px) {
+  .logos-flex {
+    justify-content: center;
+  }
+}
+@include MinMax(0px, 320px) {
+  .logos-flex {
+    justify-content: center;
+  }
+}

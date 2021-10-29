@@ -1,0 +1,56 @@
+@use "../../styles/" as *;
+.ratingCard {
+  //   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+
+  .fadeCard__boxshadow {
+    padding: 15px 30px;
+  }
+}
+
+.fadeCard__divStar {
+  span {
+    color: color(redbase);
+    padding-right: 3px;
+  }
+  .fadeCard__white {
+    color: color(ash);
+  }
+  .fadeCard__whiteNum {
+    color: black;
+  }
+}
+
+.fadeCard__divIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .fadeCard__paraC {
+    color: color(redbase);
+    padding: 5px 10px;
+    background: #ff66340d;
+    border-radius: 5px;
+  }
+  .fadeCard__paraCText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    // img {
+    //   //   size: 30px;
+    //   margin-right: 1px;
+    // }
+  }
+}
+
+.fadeCard__divAnalysis {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 10px;
+    margin-top: -30px;
+  }
+  .fadeCard__divAnalysisPara {
+    padding-top: 0px;
+  }
+}
